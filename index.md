@@ -1,3 +1,6 @@
+layout: page
+title: "Web - App Simple Interest Calculator"
+permalink: https://irubiol.github.io/Final-Proyect-Simple-Interest-Calculator
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/IRubioI/Final-Proyect-Simple-Interest-Calculator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
