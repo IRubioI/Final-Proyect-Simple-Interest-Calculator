@@ -1,0 +1,41 @@
+body {
+    background-color:black;
+    font-family: arial;
+    color: white;
+}
+h1{
+    color:grey;
+    font-family: verdana;
+}
+
+.maindiv{
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    margin:auto;
+    
+}
+
+#content{
+    padding-left: 50px;
+    text-align: left;
+}
+
+#content #principal{
+    margin-left: 68px;
+}
+
+#content #rate{
+    margin-left: 30px;
+}
+#content select{
+    margin-left: 35px;
+}
+
+#result span{
+    background-color: yellow;
+}
+
+
