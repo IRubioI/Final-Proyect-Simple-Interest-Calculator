@@ -1,40 +1,39 @@
-layout: page
-title: "Web - App Simple Interest Calculator"
-permalink: https://irubiol.github.io/Final-Proyect-Simple-Interest-Calculator
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/IRubioI/Final-Proyect-Simple-Interest-Calculator/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/IRubioI/Final-Proyect-Simple-Interest-Calculator/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web App - Simple Interest Calculator</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="maindiv">
+            <h1>Simple Interest Calculator</h1>
+            <div id="content">
+            <label for="principal">Amount</label> <input type="number"  id="principal" name="principal">  <br/><br/>
+            <label for="interest">Interest Rate</label> <input type="range"  id="rate" name="interest" min="1" max="20" value="10.25" step="0.25" onchange="updateRate()">
+            <span id="rate_val">
+                10.25%
+            </span>  <br/><br/>
+            <label for="years">No. of Years</label> <select id="years" name="years">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select><br/><br/>
+            <button onclick="compute()">Compute Interest</button><br/>
+            <span id="result"></span><br/><br/>
+        </div>
+            <footer>
+                <p>&#169; Everyone Can Get Rich<br>This Calculator belongs to Irene Rubio</p>
+            </footer>
+        </div>
+    </body>
+</html>
 
 Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
